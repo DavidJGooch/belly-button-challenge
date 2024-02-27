@@ -17,7 +17,6 @@ function indata() {
 
 //create charts
 function charts(samplecharts) {
-    // read in json data
     d3.json(url).then(function(data) {
         let samplesdata = data.samples.filter(i => i.id == samplecharts)
         let thisSample = samplesdata[0]
